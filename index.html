@@ -1,4 +1,4 @@
-<title>Tic Tac Toe</title>
+<title>⚛️ CERN Tic Tac Toe</title>
 <meta charset="UTF-8" />
 
 <style>
@@ -28,7 +28,15 @@
   }
 </style>
 
-<h1>Tic Tac Toe</h1>
+<h1>⚛️ CERN Tic Tac Toe ⚛️</h1>
+
+<p>
+  🧪 Simulación de una partida inspirada en experimentos de física de partículas.
+</p>
+
+<p>
+  Desafío de partículas: Científico vs. Campo Magnético
+</p>
 
 <table>
   <tr>
@@ -79,8 +87,8 @@
   );
   const gameOver = document.querySelector("h2");
   const playAgainBtn = document.getElementById("play-again");
-  const HUMAN = "🧑‍💻";
-  const ROBOT = "🤖";
+  const HUMAN = "⚛️";
+  const ROBOT = "🧲";
 
   // Decide who goes first
   if (Math.random() > 0.5) {
@@ -149,11 +157,11 @@
   // Display game over, cancel events
   function endGame(result) {
     if (result === "draw") {
-      gameOver.textContent = "Game over: Draw";
+      gameOver.textContent = " ⚛️ ¡Colision sin ganador!";
     } else if (result === "human") {
-      gameOver.textContent = "Game over: You win";
+      gameOver.textContent = "🎉 ¡La partícula ganó!";
     } else if (result === "robot") {
-      gameOver.textContent = "Game over: Robot wins";
+      gameOver.textContent = "🧲 ¡El campo magnético ganó!";
     }
     gameOver.hidden = false;
     playAgainBtn.hidden = false;
